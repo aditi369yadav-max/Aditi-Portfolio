@@ -236,13 +236,13 @@ footer{background:var(--dark);padding:28px 40px;display:flex;align-items:center;
       <span>⚡ LeetCode Knight · Rating 2029</span>
       <span>🏆 Global Rank 547 · Top 5.84%</span>
       <span>☁️ AWS EC2 · Docker · Node.js · React · PostgreSQL</span>
-      <span>🎓 B.Tech CSE · CGPA 8.13</span>
+      <span>🎓 B.Tech CSE · CGPA 8.26</span>
       <span>🔥 AlgoUniversity YC-backed Intern</span>
       <span>Aditi Yadav · Full-Stack AI Engineer · VIT Bhopal</span>
       <span>⚡ LeetCode Knight · Rating 2029</span>
       <span>🏆 Global Rank 547 · Top 5.84%</span>
       <span>☁️ AWS EC2 · Docker · Node.js · React · PostgreSQL</span>
-      <span>🎓 B.Tech CSE · CGPA 8.13</span>
+      <span>🎓 B.Tech CSE · CGPA 8.26</span>
       <span>🔥 AlgoUniversity YC-backed Intern</span>
     </div>
   </div>
@@ -481,6 +481,123 @@ footer{background:var(--dark);padding:28px 40px;display:flex;align-items:center;
         </div>
       </div>
     </div>
+    <!-- RAFT KV -->
+    <div class="pc">
+      <div class="pp" style="background:radial-gradient(ellipse at 40% 40%,#0a1628 0%,#050c1a 100%);">
+        <svg width="162" height="108" viewBox="0 0 162 108">
+          <rect x="8" y="8" width="44" height="28" rx="6" fill="rgba(245,158,11,.2)" stroke="rgba(245,158,11,.5)" stroke-width="1.5"/>
+          <text x="12" y="20" font-family="monospace" font-size="7" fill="#F59E0B" font-weight="bold">LEADER</text>
+          <text x="12" y="30" font-family="monospace" font-size="6" fill="#F59E0B">Node 1</text>
+          <rect x="60" y="8" width="40" height="28" rx="6" fill="rgba(100,116,139,.15)" stroke="rgba(100,116,139,.3)" stroke-width="1"/>
+          <text x="65" y="20" font-family="monospace" font-size="7" fill="#94A3B8">Node 2</text>
+          <text x="65" y="30" font-family="monospace" font-size="6" fill="#64748B">Follower</text>
+          <rect x="108" y="8" width="46" height="28" rx="6" fill="rgba(100,116,139,.15)" stroke="rgba(100,116,139,.3)" stroke-width="1"/>
+          <text x="113" y="20" font-family="monospace" font-size="7" fill="#94A3B8">Node 3</text>
+          <text x="113" y="30" font-family="monospace" font-size="6" fill="#64748B">Follower</text>
+          <line x1="52" y1="22" x2="60" y2="22" stroke="rgba(245,158,11,.5)" stroke-width="1.5" marker-end="url(#a)"/>
+          <line x1="52" y1="22" x2="108" y2="22" stroke="rgba(245,158,11,.5)" stroke-width="1.5"/>
+          <text x="8" y="56" font-family="monospace" font-size="8" fill="#10B981">Write: 177 ops/sec ✓</text>
+          <text x="8" y="70" font-family="monospace" font-size="8" fill="#3B82F6">Read:  2,597 ops/sec</text>
+          <text x="8" y="84" font-family="monospace" font-size="7.5" fill="#8B5CF6">Full Raft consensus</text>
+          <text x="8" y="98" font-family="monospace" font-size="7" fill="#475569">Leader elect · WAL · Fault tolerance</text>
+        </svg>
+        <span class="pl">Distributed Systems</span>
+      </div>
+      <div class="pb">
+        <div class="pt">RAFT-KV DISTRIBUTED STORE</div>
+        <div class="ps">Raft Consensus from scratch — 3-node cluster</div>
+        <div class="pd">Distributed key-value store implementing full Raft consensus — leader election, log replication, and fault tolerance across a 3-node cluster. 177 consensus writes/sec, 2,597 reads/sec. Used by etcd (Kubernetes), CockroachDB, and Consul. Crash recovery with WAL, randomized election timeouts.</div>
+        <div class="ptags"><span class="tag">TypeScript</span><span class="tag">Node.js</span><span class="tag">Raft</span><span class="tag">TCP Sockets</span><span class="tag">WAL</span><span class="tag">Docker</span></div>
+        <div class="plinks">
+          <a href="https://github.com/aditi369yadav-max/raft-kv" target="_blank" class="blv">GITHUB ↗</a>
+          <a href="https://github.com/aditi369yadav-max/raft-kv" target="_blank" class="bgh">README</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- MINI KAFKA -->
+    <div class="pc">
+      <div class="pp" style="background:radial-gradient(ellipse at 60% 30%,#130d2e 0%,#07050f 100%);">
+        <svg width="162" height="108" viewBox="0 0 162 108">
+          <text x="8" y="18" font-family="monospace" font-size="8.5" fill="#8B5CF6" font-weight="bold">Mini Kafka Broker</text>
+          <rect x="8" y="24" width="146" height="14" rx="4" fill="rgba(139,92,246,.1)" stroke="rgba(139,92,246,.25)" stroke-width="1"/>
+          <text x="12" y="34" font-family="monospace" font-size="7" fill="#8B5CF6">payments (3 partitions) · events · notifications</text>
+          <text x="8" y="56" font-family="monospace" font-size="8" fill="#10B981">Produce: ~15,000 msg/sec</text>
+          <text x="8" y="70" font-family="monospace" font-size="8" fill="#3B82F6">Consume: ~20,000 msg/sec</text>
+          <text x="8" y="84" font-family="monospace" font-size="7.5" fill="#F59E0B">WAL · CRC32 · Consumer Groups</text>
+          <text x="8" y="98" font-family="monospace" font-size="7" fill="#475569">Offset tracking · At-least-once delivery</text>
+        </svg>
+        <span class="pl">Distributed Messaging</span>
+      </div>
+      <div class="pb">
+        <div class="pt">MINI-KAFKA MESSAGE BROKER</div>
+        <div class="ps">Distributed message broker — Kafka concepts from scratch</div>
+        <div class="pd">Distributed message broker implementing core Kafka: partitioned topics, consumer groups, offset tracking, at-least-once delivery, and WAL. ~15,000 msg/sec produce throughput. FNV-1a partitioning, CRC32 integrity, heartbeat-based rebalancing, crash recovery via log replay.</div>
+        <div class="ptags"><span class="tag">TypeScript</span><span class="tag">Node.js</span><span class="tag">WAL</span><span class="tag">TCP Sockets</span><span class="tag">CRC32</span><span class="tag">Docker</span></div>
+        <div class="plinks">
+          <a href="https://github.com/aditi369yadav-max/mini-kafka" target="_blank" class="blv">GITHUB ↗</a>
+          <a href="https://github.com/aditi369yadav-max/mini-kafka" target="_blank" class="bgh">README</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- RECONCILIATION ENGINE -->
+    <div class="pc">
+      <div class="pp" style="background:radial-gradient(ellipse at 50% 50%,#0a1a0d 0%,#050a06 100%);">
+        <svg width="162" height="108" viewBox="0 0 162 108">
+          <rect x="8" y="8" width="36" height="14" rx="4" fill="rgba(59,130,246,.2)" stroke="rgba(59,130,246,.4)" stroke-width="1"/>
+          <text x="11" y="18" font-family="monospace" font-size="7" fill="#3B82F6">App</text>
+          <rect x="50" y="8" width="36" height="14" rx="4" fill="rgba(16,185,129,.2)" stroke="rgba(16,185,129,.4)" stroke-width="1"/>
+          <text x="53" y="18" font-family="monospace" font-size="7" fill="#10B981">Bank</text>
+          <rect x="92" y="8" width="62" height="14" rx="4" fill="rgba(245,158,11,.2)" stroke="rgba(245,158,11,.4)" stroke-width="1"/>
+          <text x="95" y="18" font-family="monospace" font-size="7" fill="#F59E0B">UPI Switch</text>
+          <text x="8" y="42" font-family="monospace" font-size="7.5" fill="#EF4444">AMOUNT_MISMATCH → flag</text>
+          <text x="8" y="56" font-family="monospace" font-size="7.5" fill="#F59E0B">STATUS_MISMATCH → retry</text>
+          <text x="8" y="70" font-family="monospace" font-size="7.5" fill="#10B981">DUPLICATE → auto-reverse ✓</text>
+          <text x="8" y="84" font-family="monospace" font-size="7.5" fill="#8B5CF6">70%+ auto-resolved</text>
+          <text x="8" y="98" font-family="monospace" font-size="7" fill="#475569">BullMQ · PostgreSQL · React dashboard</text>
+        </svg>
+        <span class="pl">Fintech · Distributed</span>
+      </div>
+      <div class="pb">
+        <div class="pt">RECONCILIATION ENGINE</div>
+        <div class="ps">Distributed Transaction Reconciliation System</div>
+        <div class="pd">Production-grade engine detecting, classifying, and auto-resolving transaction mismatches across 3 payment sources (App, Bank, UPI Switch). Pure functional classifier, BullMQ ingestion workers, rule-based auto-resolver handling 70%+ of mismatches, full audit trail, React analytics dashboard.</div>
+        <div class="ptags"><span class="tag">TypeScript</span><span class="tag">PostgreSQL</span><span class="tag">BullMQ</span><span class="tag">Redis</span><span class="tag">React</span><span class="tag">Haskell</span></div>
+        <div class="plinks">
+          <a href="https://reconciliation-engine-khaki.vercel.app" target="_blank" class="blv">LIVE ↗</a>
+          <a href="https://github.com/aditi369yadav-max/reconciliation-engine" target="_blank" class="bgh">GITHUB</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- UPI PAYMENT GATEWAY -->
+    <div class="pc">
+      <div class="pp" style="background:radial-gradient(ellipse at 35% 55%,#0a1020 0%,#050508 100%);">
+        <svg width="162" height="108" viewBox="0 0 162 108">
+          <text x="8" y="16" font-family="monospace" font-size="8" fill="#F59E0B" font-weight="bold">UPI State Machine</text>
+          <text x="8" y="30" font-family="monospace" font-size="7" fill="#3B82F6">INITIATED → AUTHENTICATED</text>
+          <text x="8" y="42" font-family="monospace" font-size="7" fill="#8B5CF6">→ PROCESSING → SUCCESS</text>
+          <text x="8" y="54" font-family="monospace" font-size="7" fill="#10B981">→ RECONCILED (terminal)</text>
+          <line x1="8" y1="62" x2="154" y2="62" stroke="rgba(255,255,255,.06)" stroke-width="1"/>
+          <text x="8" y="76" font-family="monospace" font-size="7.5" fill="#10B981">Idempotency · Redis NX lock</text>
+          <text x="8" y="90" font-family="monospace" font-size="7.5" fill="#F59E0B">HMAC webhooks · ACID txns</text>
+          <text x="8" y="104" font-family="monospace" font-size="7" fill="#475569">Exp backoff · Pure domain layer</text>
+        </svg>
+        <span class="pl">Fintech · Production</span>
+      </div>
+      <div class="pb">
+        <div class="pt">UPI PAYMENT GATEWAY</div>
+        <div class="ps">Production-grade UPI simulator — fintech patterns</div>
+        <div class="pd">Production-grade UPI/payment gateway demonstrating real fintech patterns: pure state machines, Redis distributed locking, idempotency (SET NX), HMAC-signed webhooks with exponential backoff, ACID transactions, OTP auth, and full audit trail. Pure domain layer with zero side effects — mirrors Juspay/Haskell FP approach.</div>
+        <div class="ptags"><span class="tag">TypeScript</span><span class="tag">PostgreSQL</span><span class="tag">Redis</span><span class="tag">Express</span><span class="tag">Haskell</span><span class="tag">Docker</span></div>
+        <div class="plinks">
+          <a href="https://github.com/aditi369yadav-max/A-Mini-Payment-Gateway" target="_blank" class="blv">GITHUB ↗</a>
+          <a href="https://github.com/aditi369yadav-max/A-Mini-Payment-Gateway" target="_blank" class="bgh">README</a>
+        </div>
+      </div>
+    </div>
+
 
   </div>
 </section>
@@ -503,7 +620,7 @@ footer{background:var(--dark);padding:28px 40px;display:flex;align-items:center;
   </div>
   <div style="max-width:860px;margin:0 auto">
     <div class="sh" style="font-size:clamp(13px,2vw,24px);margin-top:50px;margin-bottom:30px">Education</div>
-    <div class="edu"><div class="sc">Vellore Institute of Technology, Bhopal</div><div class="dg">B.Tech in Computer Science &amp; Engineering · 2022–2026</div><div><span class="cg">CGPA: 8.13 / 10</span></div></div>
+    <div class="edu"><div class="sc">Vellore Institute of Technology, Bhopal</div><div class="dg">B.Tech in Computer Science &amp; Engineering · 2022–2026</div><div><span class="cg">CGPA: 8.26 / 10</span></div></div>
   </div>
 </section>
 
